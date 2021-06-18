@@ -86,7 +86,6 @@ export const products = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
     category: "bedroom",
     shipping: true,
-    featured: true,
   },
   {
     id: "recd1jIVIEChmiwhy",
@@ -143,6 +142,18 @@ export const products = [
     name: "wifi video door bell",
     price: 23999,
     image: "./images/wifivideodoorbell.jpg",
+    colors: ["#0000ff", "#000"],
+    company: "ikea",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
+    category: "outdoor",
+    shipping: true,
+  },
+  {
+    id: "rec3Ntk7siEEW9ha1",
+    name: "wireless nvr",
+    price: 23999,
+    image: "./images/wirelessNVR.jpg",
     colors: ["#0000ff", "#000"],
     company: "ikea",
     description:
