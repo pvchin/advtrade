@@ -309,7 +309,7 @@ export const products = [
     company: "AI",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
-    category: "smart applicances",
+    category: "smart appliances",
     shipping: true,
     featured: true,
   },
