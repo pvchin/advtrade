@@ -8,13 +8,12 @@ const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
+         <h2>Imagine</h2> <br />
         <h1>
-          Everythings on hand <br />
-          in comfort zone
+          A Smart World
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur Deleniti iure quasi odit
-          tenetur
+          you can control, integrate & automate
         </p>
         <Link to="/products" className="btn hero-btn">
           shop now
