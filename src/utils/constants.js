@@ -153,7 +153,7 @@ export const products = [
     company: "AI",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
-    category: "smart security",
+    category: "smart sensors",
     shipping: true,
     featured: true,
   },
