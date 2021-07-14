@@ -8,7 +8,9 @@ const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-         <h2>Imagine</h2> <br />
+        <h2>Imagine</h2>
+        {/* <br /> */}
+        
         <h1>
           A Smart World
         </h1>
