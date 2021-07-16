@@ -28,6 +28,14 @@ const FeaturedProducts = () => {
     indicators: true,
   };
 
+  const propertiesphone = {
+    duration: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    indicators: true,
+  };
+
   if (loading) {
     return <Loading />;
   }
@@ -55,10 +63,13 @@ const FeaturedProducts = () => {
             })}
           </Slide>
         )}
-        {matchPhone &&
-          featured.slice(0, 3).map((product) => {
-            return <Product key={product.id} {...product} />;
-          })}
+        {matchPhone && (
+          <Slide {...propertiesphone}>
+            {featured.map((product) => {
+              return <Product key={product.id} {...product} />;
+            })}
+          </Slide>
+        )}
       </div>
       <Link to="/products" className="btn">
         all products
