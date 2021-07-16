@@ -1,5 +1,6 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
+import useReactMatchMedia from "react-simple-matchmedia";
 import { useProductsContext } from "../context/products_context";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -8,6 +9,11 @@ import Loading from "./Loading";
 import Product from "./Product";
 
 const FeaturedProducts = () => {
+  const matchPhone = useReactMatchMedia("phone");
+  const matchTablet = useReactMatchMedia("tablet");
+  const match600 = useReactMatchMedia(
+    "(min-width: 600px) and (max-width: 1800px)"
+  );
   const {
     products_loading: loading,
     products_error: error,
@@ -35,11 +41,24 @@ const FeaturedProducts = () => {
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
-        <Slide {...properties}>
-          {featured.map((product) => {
+        {match600 && (
+          <Slide {...properties}>
+            {featured.map((product) => {
+              return <Product key={product.id} {...product} />;
+            })}
+          </Slide>
+        )}
+        {matchTablet && (
+          <Slide {...properties}>
+            {featured.map((product) => {
+              return <Product key={product.id} {...product} />;
+            })}
+          </Slide>
+        )}
+        {matchPhone &&
+          featured.slice(0, 3).map((product) => {
             return <Product key={product.id} {...product} />;
           })}
-        </Slide>
       </div>
       <Link to="/products" className="btn">
         all products
