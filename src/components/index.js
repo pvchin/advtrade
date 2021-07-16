@@ -17,6 +17,8 @@ import Stars from "./Stars";
 import CartContent from "./CartContent";
 import PageHero from "./PageHero";
 import Intro from "./Intro";
+import Slideshow from "./Slideshows";
+import MultipleSlides from "./MultipleSlides";
 
 export {
   FeaturedProducts,
@@ -24,6 +26,8 @@ export {
   CartButtons,
   Footer,
   Sidebar,
+  Slideshow,
+  MultipleSlides,
   Hero,
   Services,
   Contact,

@@ -1,5 +1,4 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
 import { useProductsContext } from "../context/products_context";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -13,15 +12,6 @@ const FeaturedProducts = () => {
     products_error: error,
     featured_products: featured,
   } = useProductsContext();
-
-  const properties = {
-    duration: 3000,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    autoplay: true,
-    indicators: true,
-  };
-
   if (loading) {
     return <Loading />;
   }
@@ -35,11 +25,9 @@ const FeaturedProducts = () => {
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
-        <Slide {...properties}>
-          {featured.map((product) => {
-            return <Product key={product.id} {...product} />;
-          })}
-        </Slide>
+        {featured.slice(0, 3).map((product) => {
+          return <Product key={product.id} {...product} />;
+        })}
       </div>
       <Link to="/products" className="btn">
         all products
@@ -63,13 +51,6 @@ const Wrapper = styled.section`
     width: 148px;
     margin: 0 auto;
     text-align: center;
-  }
-  img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: var(--radius);
-    transition: var(--transition);
   }
   @media (min-width: 576px) {
     .featured {

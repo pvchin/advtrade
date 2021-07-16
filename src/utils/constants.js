@@ -208,7 +208,7 @@ export const products = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
     category: "smart electricals",
     shipping: true,
-    featured: false,
+    featured: true,
   },
   {
     id: "se2",
@@ -273,11 +273,11 @@ export const products = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
     category: "smart electricals",
     shipping: true,
-    featured: false,
+    featured: true,
   },
   {
     id: "sa1",
-    name: "AI Floor Cleaning Robot A",
+    name: "AI Floor Cleaning Robot",
     price: 0,
     image: "./products/smartapp-sa1.jpg",
     colors: ["#0000ff", "#000"],
@@ -286,7 +286,7 @@ export const products = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea. Perferendis corrupti reiciendis nesciunte",
     category: "smart appliances",
     shipping: true,
-    featured: false,
+    featured: true,
   },
   // {
   //   id: "sa2",
