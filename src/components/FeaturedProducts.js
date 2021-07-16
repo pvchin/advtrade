@@ -63,13 +63,10 @@ const FeaturedProducts = () => {
             })}
           </Slide>
         )}
-        {matchPhone && (
-          <Slide {...propertiesphone}>
-            {featured.map((product) => {
-              return <Product key={product.id} {...product} />;
-            })}
-          </Slide>
-        )}
+        {matchPhone &&
+          featured.slice(0, 3).map((product) => {
+            return <Product key={product.id} {...product} />;
+          })}
       </div>
       <Link to="/products" className="btn">
         all products
