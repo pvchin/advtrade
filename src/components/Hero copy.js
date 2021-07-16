@@ -1,20 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Slide } from "react-slideshow-image";
 import heroBcg from "../assets/hero-bcg-bg.jpg";
 import heroBcg1 from "../assets/hero-bcg-1.jpg";
-import heroBcg2 from "../assets/hero-business.jpeg";
-import SlideshowExample2 from "./SlideshowExample2";
-import MultipleSlides from "./MultipleSlides";
 
-const properties = {
-  duration: 3000,
-  slidesToShow: 3,
-  slidesToScroll: 2,
-  autoplay: true,
-  indicators: true,
-};
+const slideImages = [
+  "assets/hero-bcg-bg.jpg",
+  "assets/hero-bcg-1.jpg",
+];
 
 const Hero = () => {
   return (
@@ -22,19 +15,21 @@ const Hero = () => {
       <article className="content">
         <h2>Imagine</h2>
         {/* <br /> */}
-
-        <h1>A Business World</h1>
-        <p>you can control, integrate & automate</p>
-        {/* <Link to="/products" className="btn hero-btn">
+        
+        <h1>
+          A Smart World
+        </h1>
+        <p>
+          you can control, integrate & automate
+        </p>
+        <Link to="/products" className="btn hero-btn">
           shop now
-        </Link> */}
+        </Link>
       </article>
       <article className="img-container">
-     
-        <img src={heroBcg2} alt="nice table" className="main-img" />
+        <img src={heroBcg1} alt="nice table" className="main-img" />
         {/* <img src={heroBcg} alt="person working" className="accent-img" /> */}
       </article>
-      
     </Wrapper>
   );
 };

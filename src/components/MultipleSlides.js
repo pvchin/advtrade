@@ -17,8 +17,8 @@ const MultipleSlides = () => {
 
   const properties = {
     duration: 3000,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
     indicators: true,
   };
