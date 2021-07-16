@@ -49,20 +49,14 @@ const FeaturedProducts = () => {
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
-        {match600 && (
+        {!matchPhone && (
           <Slide {...properties}>
             {featured.map((product) => {
               return <Product key={product.id} {...product} />;
             })}
           </Slide>
         )}
-        {matchTablet && (
-          <Slide {...properties}>
-            {featured.map((product) => {
-              return <Product key={product.id} {...product} />;
-            })}
-          </Slide>
-        )}
+
         {matchPhone &&
           featured.slice(0, 3).map((product) => {
             return <Product key={product.id} {...product} />;
