@@ -13,13 +13,10 @@ const Intro = () => {
         <img src={introImg2} alt="nice desk" />
         <article>
           <div className="title">
-            <h2>Full products solution</h2>
+            <h2>Full Smart Solutions</h2>
             <div className="underline"></div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-            consectetur Lorem ipsum dolor sit amet consectetur
-          </p>
+          <p>To build smart life, homes, offices & businesses</p>
         </article>
       </Wrapper>
     </main>

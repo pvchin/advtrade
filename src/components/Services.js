@@ -7,14 +7,10 @@ const Services = () => {
     <Wrapper classname="section-center">
       <article className="header">
         <h3>
-          smart devices <br />
-          customise for your needs
+          smart systems to create & run your world <br />
         </h3>
-        <p>
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates,
-          ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde
-          numquam nisi',
-        </p>
+        <br />
+        <p>'Start imagining, start building your world!'</p>
       </article>
       <div className="services-center">
         {services.map((service) => {
