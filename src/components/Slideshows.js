@@ -2,6 +2,7 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./slideshows.css";
+import { Box, Image } from "@chakra-ui/react";
 
 const slideImages = ["images/business-world.jpg", "images/home-world.jpg"];
 
