@@ -16,11 +16,16 @@ const properties = {
 const Slideshow = () => {
   return (
     <div>
-      {/* <Box display="block" position="relative">
+      <Box display="block" position="relative">
         <AspectRatio w="100%" maxH="550px" ratio={4 / 3}>
-          <Image w="800" src={slideImages[1]} alt="image 1" objectFit="cover" />
+          <Image
+            w="800"
+            src="https://res.cloudinary.com/dlmzwvakr/image/upload/v1634214131/advtrade/home-world_tnjubu.jpg"
+            alt="image 1"
+            objectFit="cover"
+          />
         </AspectRatio>
-      </Box> */}
+      </Box>
       <Slide easing="ease" {...properties}>
         <div className="each-slide">
           <Box display="block" position="relative" h="550">
@@ -28,7 +33,7 @@ const Slideshow = () => {
               <Image
                 w="800"
                 src={slideImages[0]}
-                alt="image 1"
+                alt="image 0"
                 objectFit="cover"
               />
             </AspectRatio>
