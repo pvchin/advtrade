@@ -3,44 +3,18 @@ import styled from "styled-components";
 import { formatPrice } from "../utils/helpers";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { AspectRatio, Box, Image, Wrap, WrapItem } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 
 const Product = ({ image, name, price, id }) => {
   return (
     <Wrapper>
-      {/* <div className="container">
+      <div className="container">
         <Image boxSize="200px" objectFit="cover" src={image} alt={name} />
-        <img src={image} alt={name} />
-        <Link to={`/products/${id}`} className="link">
+        {/* <img src={image} alt={name} /> */}
+        {/* <Link to={`/products/${id}`} className="link">
           <FaSearch />
-        </Link>
-      </div> */}
-      <Box boxSize="300" h="300">
-        {/* <AspectRatio maxW="280px" ratio={1}> */}
-        <AspectRatio display="block" w="300px" h="300px" ratio={1}>
-          <Wrap w="300px" h="300px" px="1rem" spacing={4} justify="center">
-            <WrapItem
-              w="95%"
-              h="95%"
-              boxShadow="base"
-              rounded="20px"
-              overflow="hidden"
-              bg="white"
-              lineHeight="0"
-              _hover={{ boxShadow: "dark-lg" }}
-            >
-              <Image
-                src={image}
-                fallbackSrc="https://via.placeholder.com/150"
-                alt={name}
-                width="100%"
-                display="block"
-                objectFit="cover"
-              />
-            </WrapItem>
-          </Wrap>
-        </AspectRatio>
-      </Box>
+        </Link> */}
+      </div>
       <footer>
         <h5>{name}</h5>
         <p>{formatPrice(price)}</p>
