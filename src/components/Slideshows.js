@@ -28,7 +28,11 @@ const Slideshow = () => {
       </Box> */}
       <Slide easing="ease" {...properties}>
         <div className="each-slide">
-          <Box display="block" position="relative" h="550">
+          <Box
+            display="block"
+            position="relative"
+            h={{ base: "25px", md: "550px", lg: "550px" }}
+          >
             <AspectRatio display="block" w="100%" maxH="550px" ratio={8 / 4}>
               <Image
                 w="800"
