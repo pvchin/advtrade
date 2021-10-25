@@ -36,6 +36,7 @@ const Slideshow = () => {
             <AspectRatio display="block" w="100%" maxH="550px" ratio={8 / 4}>
               <Image
                 w="800"
+                h="400"
                 src={slideImages[0]}
                 alt="image 0"
                 objectFit="cover"
@@ -48,6 +49,7 @@ const Slideshow = () => {
           <AspectRatio display="block" w="100%" maxH="550px" ratio={8 / 4}>
             <Image
               w="800"
+              h="400"
               src={slideImages[1]}
               alt="image 1"
               objectFit="cover"

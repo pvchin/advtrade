@@ -4,6 +4,7 @@ import useReactMatchMedia from "react-simple-matchmedia";
 import { useProductsContext } from "../context/products_context";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Heading} from "@chakra-ui/react"
 import Error from "./Error";
 import Loading from "./Loading";
 import Product from "./Product";
@@ -45,7 +46,7 @@ const FeaturedProducts = () => {
   return (
     <Wrapper className="section">
       <div className="title">
-        <h2>most sellable products</h2>
+        <Heading size="xl">most sellable products</Heading>
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
