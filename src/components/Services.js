@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { services } from "../utils/constants";
+import { Heading, Text} from "@chakra-ui/react"
 
 const Services = () => {
   return (
     <Wrapper classname="section-center">
       <article className="header">
-        <h3>
+        <Heading size="lg" px="5">
           smart systems to create & run your world <br />
-        </h3>
+        </Heading>
         <br />
-        <p>'Start imagining, start building your world!'</p>
+        <Text fontSize="25" px="5">Start imagining, start building your world!</Text>
       </article>
       <div className="services-center">
         {services.map((service) => {
